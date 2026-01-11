@@ -11,8 +11,8 @@ strategy_id = st.text_input(
     value="51464556"
 )
 
-# Clé API récupérée depuis les secrets
-API_KEY = st.secrets["KRYSTAL_API_KEY"]
+# API Key (fournie)
+API_KEY = "6ebffbefdd2c97911e14ff7237fb1428e5344a63"
 
 if st.button("Récupérer la stratégie"):
 
