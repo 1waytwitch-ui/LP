@@ -9,7 +9,7 @@ st.title("Positions d'une stratégie Krystal")
 strategy_id = st.text_input("Numéro de stratégie", value="51464556")
 
 # ⚠️ Clé API directement dans le code
-API_KEY = "6ebffbefdd2c97911e14ff7237fb1428e5344a63"
+API_KEY = st.secrets["KRYSTAL_API_KEY"]
 
 if st.button("Récupérer la stratégie"):
     if not strategy_id.isdigit():
